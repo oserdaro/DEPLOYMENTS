@@ -66,11 +66,11 @@ if st.button("Predict"):
 try:
     st.success(f"Iris Flower is **{result}**")
     if result == "versicolor":
-    	st.image(Image.open("Iris_versicolor.jpeg"))
+    	st.image(Image.open("iris_versicolor.jpeg"))
     elif result == "setosa":
-        st.image(Image.open("Iris_setosa.jpeg"))
+        st.image(Image.open("iris_setosa.jpeg"))
     elif result == "virginica":
-        st.image(Image.open("Iris_virginica.jpeg"))
+        st.image(Image.open("iris_virginica.jpeg"))
 except NameError:
     st.write("Please **Predict** button to display the result!")
 
